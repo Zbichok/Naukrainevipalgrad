@@ -5,18 +5,16 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            ushort i = 0;
-            for (; ; )
+
+            int count = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Какой текст вывести? ");
+            string message = Console.ReadLine();
+
+            for (int i = 0; i < count; i++)
             {
-                Console.WriteLine("Rida number: " + i);
-                i++;
-
-                if (i == 11)
-                {
-                    break; 
-                }
+                Console.WriteLine(message);
             }
-
 
         }
     }
